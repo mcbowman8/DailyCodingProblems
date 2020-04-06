@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using DailyCodingProblem;
+using NUnit.Framework;
+using Shouldly;
 
 namespace DailyCodingProblemTests
 {
@@ -8,7 +10,9 @@ namespace DailyCodingProblemTests
         [TestCase(new int[] { 1, 1, 1 }, new int[] { 1, 1, 1 })]
         public void ReturnCorrectResult(int[] input, int[] expected)
         {
-            Assert.False(false);
+            int[] actual = ArrayProductCreator.Calculate(input);
+
+            actual.ShouldBe(expected);
         }
     }
 }

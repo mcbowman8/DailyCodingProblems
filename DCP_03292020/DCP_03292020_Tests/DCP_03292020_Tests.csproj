@@ -15,4 +15,8 @@
     <PackageReference Include="Shouldly" Version="3.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DCP_03292020\DCP_03292020.csproj" />
+  </ItemGroup>
+
 </Project>
